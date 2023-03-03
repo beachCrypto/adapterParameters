@@ -1,0 +1,11 @@
+// https://layerzero.gitbook.io/docs/evm-guides/advanced/relayer-adapter-parameters
+
+function getAdapterParams() {
+    let adapterParams = ethers.utils.solidityPack(
+        ['uint16','uint256'],
+        [1, 200000]
+    )
+   console.log(adapterParams)
+}
+
+getAdapterParams();
